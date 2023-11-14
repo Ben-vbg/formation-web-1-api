@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body{
+  margin: 0 auto;
+}
+
+header{
+  padding-top: 40px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  /* version courte */
+  padding: 40px 10px;
+}
+
+header h1{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+header p{
+  font-size: 21px;
+  text-align: center;
+}
+
+header small{
+  display: block;
+  text-align: center;
+}
+
+img{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 45px auto 0 auto;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+small{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+a{
+  color: black;
+  text-decoration-color: #3a92bb;
+}
+
+ul li{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+
+blockquote{
+  margin: 45px auto;
+}
+
+blockquote p {
+  font-family: serif;
+  font-size: 26px;
+}
+
+.chart-container{
+  margin: 35px auto;
+}
+
+.methodology{
+  margin-top: 45px;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.wrapper--medium{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.related-links{
+  margin-top: 55px;
+}
+
+footer{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 35px;
+  padding: 20px;
+  background: #212121;
+  color: white;
+}
+
+
+/* Dispositions */
+
+.container_column{
+  display: flex;
+  padding: 15px;
+  border: 1px solid rgba(234, 234, 234, 0.8);
+}
+
+.column50{
+  width: 100%;
+  max-width: 50%;
+  padding: 15px;
+  border: 1px solid rgba(234, 234, 234, 0.8);
+}
+
+.column50 h3{
+  text-align: center;
+}
+
+/* Ex. Avec une image */
+
+.container_column_img{
+  border: none;
+}
+
+.container_column_img .column50{
+  border: none;
+}
+
+.container_column_img .column50 img{
+  margin: 0;
+}
+.container_column_img .column50 h3{
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Ex. 3 colonnes */
+.column33{
+  width: 100%;
+  max-width: 50%;
+  padding: 15px;
+  border: 1px solid rgba(234, 234, 234, 0.8);
+}
+
+.column33 h3{
+  text-align: center;
+}
+
+
+/* Version mobile conditions */
+
+@media screen and (max-width: 900px) {
+  .container_column{
+    flex-wrap: wrap;
+  }
+  .column50{
+    max-width: 100%
+  }
+  .column33{
+    max-width: 100%
+  }
+}

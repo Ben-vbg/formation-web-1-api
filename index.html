@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title de la page / dans l'onglet du navigateur -->
+    <title>Titre de l'article</title>
+
+    <!-- Meta -->
+    <meta name="description" content="Description de l'article pour le SEO">
+    <meta name="keywords" content="mots-clés, pertinents, pour, l'article, séparés, par, des, virgules">
+    <meta name="author" content="Nom de l'auteur">
+    <meta name="robots" content="index, follow">
+
+    <!-- Meta RS -->
+    <meta property="og:title" content="Titre de l'article">
+    <meta property="og:description" content="Description de l'article pour le SEO">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="URL de l'article">
+    <meta property="og:image" content="URL de l'image à utiliser pour l'article">
+    <meta property="og:image:alt" content="Description de l'image pour le SEO">
+    <meta property="og:site_name" content="Nom du site web">
+
+    <!-- Meta Twitter -->
+    <meta name="twitter:title" content="Titre de l'article">
+    <meta name="twitter:description" content="Description de l'article pour le SEO">
+    <meta name="twitter:image" content="URL de l'image à utiliser pour l'article">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- https://image-compare-viewer.netlify.app/ -->
+    <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer@1.5.0/dist/image-compare-viewer.min.css">
+
+  </head>
+
+  <body id="article">
+
+    <!-- Hearder: Titre + Chapeau -->
+    <header>
+
+    <div class="wrapper">
+
+        <h1>Titre de votre article</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quia officiis dolorum ratione incidunt exercitationem corporis illum! Odio aut natus aspernatur possimus minus, illo laboriosam reiciendis dolor alias autem nam?
+        </p>
+
+        <small>
+          Par <a href="#" target ="_blank">Nom de l'auteur</a> | Publié le <time datetime="2023-04-23">23 avril 2023</time>
+        </small>
+
+        <small>
+          Temp de lecture : <span id="temps"></span>
+        </small>
+
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+        <div class="wrapper">
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cupiditate, earum expedita et, quae atque quam magni veritatis eius dignissimos at dicta hic cum molestias unde non adipisci possimus? Numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis asperiores eaque totam maiores inventore hic consequatur nemo quis cumque tempora porro ex nesciunt fuga, laudantium modi deleniti debitis eligendi quam.
+          </p>
+
+        </div>
+
+        <!-- Image + wrapper medium-->
+        <div class="wrapper--medium">
+          <img src="images/img-1.jpg" alt="Description SEO image">
+          <small>Description / Source / Credits</small>
+        </div>
+
+        <div class="wrapper">
+
+          <!-- Citation -->
+          <blockquote cite="https://www.votresource.com/">
+            <p>
+              "Ce n'est pas parce que les choses sont difficiles que nous n'osons pas, c'est parce que nous n'osons pas qu'elles sont difficiles."
+            </p>
+            — <cite>Seneca</cite>
+          </blockquote>
+
+          <!-- Paragraphe simple -->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi cumque rerum, aliquid voluptates voluptas nisi quaerat eos facere a, sequi omnis et. Laboriosam pariatur sapiente deserunt necessitatibus repudiandae saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi cumque rerum, aliquid voluptates voluptas nisi quaerat eos facere a, sequi omnis et. Laboriosam pariatur sapiente deserunt necessitatibus repudiandae saepe.
+          </p>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod animi cumque rerum, aliquid voluptates voluptas nisi quaerat eos facere a, sequi omnis et. Laboriosam pariatur sapiente deserunt necessitatibus repudiandae saepe.
+          </p>
+
+          <div class="chart-container" style="width: 100%;">
+            <h2>Titre du graphique</h2>
+            <canvas id="chart-1" width="600" height="400" alt="Description du graphique"></canvas>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet.
+          </p>
+
+          <div id="image-compare">
+            <img src="images/photo1-avant.jpg" alt="Description image"/>
+            <img src="images/photo1-apres.jpg" alt="Description image" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet.
+          </p>
+
+        </div>
+
+        <!-- Faire deux blocs -->
+        <div class="wrapper--medium">
+          <div class="container_column">
+            <div class="column50">
+              <h3>Colonne A</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+            </div>
+            <div class="column50">
+              <h3>Colonne B</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <!-- Faire deux blocs -->
+        <div class="wrapper--medium">
+          <div class="container_column container_column_img">
+            <div class="column50">
+              <img src="./images/img-1.jpg" alt="">
+            </div>
+            <div class="column50">
+              <h3>Colonne B</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+              <p>Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faire trois blocs -->
+        <div class="wrapper--medium">
+          <div class="container_column">
+            <div class="column33">
+              <h3>Colonne A</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+            </div>
+            <div class="column33">
+              <h3>Colonne B</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+            </div>
+            <div class="column33">
+              <h3>Colonne C</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita illo, velit alias nesciunt distinctio eos blanditiis laboriosam quidem dolorem laudantium dolore est eveniet quos rem quasi, recusandae aspernatur. Ratione!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iure dolorum libero dignissimos fuga dolores mollitia voluptas cupiditate. Ipsam explicabo, illo at facilis ratione sint ipsum laudantium ab corrupti eveniet.
+          </p>
+
+          <!-- Méthodologie -->
+          <div class="methodology">
+            <h2>Méthodologie</h2>
+            <p>Dans cet article, nous avons effectué une analyse approfondie de... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae rerum placeat et magnam, at excepturi dignissimos dicta quibusdam id dolore enim unde. Cupiditate dolor facere itaque! Inventore quibusdam non reiciendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatibus fugit autem, deserunt magnam minima doloribus sequi accusamus, quaerat et sit excepturi nulla aut reiciendis illum molestiae. Sit, beatae unde?</p>
+            <ul>
+              <li>Collecte des données</li>
+              <li>Nettoyage des données</li>
+              <li>Analyse statistique</li>
+              <li>Interprétation des résultats</li>
+            </ul>
+          </div>
+
+          <!-- Liens complémentaire -->
+          <div class="related-links" role="complementary">
+            <h2>Lire plus</h2>
+            <ul>
+              <li><a href="https://example.com/article-1" target ="_blank">Titre de l'article 1</a></li>
+              <li><a href="https://example.com/article-2" target ="_blank">Titre de l'article 2</a></li>
+              <li><a href="https://example.com/article-3" target ="_blank">Titre de l'article 3</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </article>
+    </main>
+
+    <footer>
+      <small>Droits d'auteur © 2023 Nom du journal. Tous droits réservés.</small>
+    </footer>
+
+    <!-- https://www.chartjs.org/ -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- https://image-compare-viewer.netlify.app/ -->
+    <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+    <!-- Vos scripts -->
+    <script src="main.js"></script>
+
+  </body>
+</html>
