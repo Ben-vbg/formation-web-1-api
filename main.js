@@ -44,17 +44,13 @@ const viewer = new ImageCompare(element).mount();
 
 // Making a simple GET request
 fetch('https://opendata.infrabel.be/api/explore/v2.1/catalog/datasets/belangrijkste-incidenten/records?limit=10')
-
 .then(response => {
 return response.json();
 })
 
 .then(data => {
 
-// console.log(data);
-
-console.log(data.results);
-
+// console.log(data.results);
 
 const htmlApi = document.getElementById('api');
 
@@ -80,3 +76,30 @@ for (let i = 0; i < data.results.length; i++) {
 }
 
 });
+
+
+// Function to fetch and update the joke -- https://v2.jokeapi.dev/ --
+function fetchJoke() {
+  // API URL
+  const apiUrl = 'https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?lang=fr&blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+
+  // Fetch data from the API
+  fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+          // Check if the response contains a joke
+          const joke = data.joke || `${data.setup} ${data.delivery}`;
+
+          // Update the content of the div with the new joke
+          document.getElementById('joke-container').innerHTML = `<p>${joke}</p>`;
+      })
+      .catch(error => {
+          console.error('Error fetching joke:', error);
+      });
+}
+
+// Fetch the joke initially
+fetchJoke();
+
+// Set up an interval to fetch and update the joke every 30 seconds
+setInterval(fetchJoke, 30000);
